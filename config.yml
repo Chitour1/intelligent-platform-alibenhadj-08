@@ -1,0 +1,20 @@
+
+backend:
+  name: github
+  repo: Chitour1/intelligent-platform-alibenhadj-08
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+locale: 'ar'
+
+collections:
+  - name: "pages"
+    label: "الصفحات"
+    folder: "src/content"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "العنوان", name: "title", widget: "string" }
+      - { label: "المحتوى", name: "body", widget: "markdown" }
